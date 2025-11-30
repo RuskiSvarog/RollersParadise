@@ -1,0 +1,53 @@
+# ============================================================
+# SIMPLE LOAD TEST - Start Here!
+# ============================================================
+# Test with just 50 concurrent players
+# Duration: 5 minutes
+# Purpose: Baseline performance measurement
+# ============================================================
+
+config:
+  target: "https://{{ $processEnvironment.SUPABASE_PROJECT_ID }}.supabase.co/functions/v1/make-server-67091a4f"
+  phases:
+    # Ramp up to 50 players over 2 minutes
+    - duration: 120
+      arrivalRate: 5
+      name: "Ramp up"
+    
+    # Hold 50 players for 3 minutes
+    - duration: 180
+      arrivalRate: 5
+      name: "Sustained load"
+  
+  ensure:
+    maxErrorRate: 1
+    p95: 2000
+    p99: 5000
+  
+  variables:
+    projectId: "{{ $processEnvironment.SUPABASE_PROJECT_ID }}"
+    anonKey: "{{ $processEnvironment.SUPABASE_ANON_KEY }}"
+
+scenarios:
+  - name: "Basic Lobby Usage"
+    flow:
+      # Load lobby data
+      - get:
+          url: "/lobby/data?email=test{{ $randomNumber }}@test.com"
+          headers:
+            Authorization: "Bearer {{ anonKey }}"
+      - think: 5
+      
+      # Get stats
+      - get:
+          url: "/stats"
+          headers:
+            Authorization: "Bearer {{ anonKey }}"
+      - think: 3
+      
+      # Get rooms
+      - get:
+          url: "/rooms"
+          headers:
+            Authorization: "Bearer {{ anonKey }}"
+      - think: 5

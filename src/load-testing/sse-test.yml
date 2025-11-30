@@ -1,0 +1,49 @@
+# ============================================================
+# SSE CONNECTION TEST
+# ============================================================
+# Test Server-Sent Events under load
+# Purpose: Verify SSE can handle many concurrent connections
+# ============================================================
+
+config:
+  target: "https://{{ $processEnvironment.SUPABASE_PROJECT_ID }}.supabase.co/functions/v1/make-server-67091a4f"
+  phases:
+    # Open 100 SSE connections over 2 minutes
+    - duration: 120
+      arrivalRate: 10
+      name: "Open 100 SSE connections"
+    
+    # Hold connections for 5 minutes
+    - duration: 300
+      arrivalRate: 0
+      name: "Hold SSE connections"
+  
+  variables:
+    projectId: "{{ $processEnvironment.SUPABASE_PROJECT_ID }}"
+    anonKey: "{{ $processEnvironment.SUPABASE_ANON_KEY }}"
+
+scenarios:
+  - name: "SSE Connection Test"
+    engine: "http"
+    flow:
+      # Connect to stats stream
+      - get:
+          url: "/stats/stream"
+          headers:
+            Authorization: "Bearer {{ anonKey }}"
+            Accept: "text/event-stream"
+            Cache-Control: "no-cache"
+      
+      # Keep connection alive
+      - think: 300
+      
+      # Connect to rooms stream
+      - get:
+          url: "/rooms/stream"
+          headers:
+            Authorization: "Bearer {{ anonKey }}"
+            Accept: "text/event-stream"
+            Cache-Control: "no-cache"
+      
+      # Keep connection alive
+      - think: 300

@@ -1,0 +1,171 @@
+═══════════════════════════════════════════════════════════════
+            HOW TO CHECK & FIX BUGS - SIMPLE GUIDE
+                    For: Ruski (Owner)
+═══════════════════════════════════════════════════════════════
+
+
+🎯 WHAT THIS DOES
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+When players find bugs, they report them.
+You can see all reports and share with AI.
+AI reads reports and fixes the bugs.
+Your game gets better!
+
+
+⚡ 3-STEP PROCESS (Takes 30 seconds!)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+STEP 1: Open Dashboard
+  └─ Press these keys together: Ctrl + Shift + Alt + R
+     (Or add ?admin-reports=true to your URL)
+
+STEP 2: Copy Reports  
+  └─ Click the blue "Copy All" button
+  
+STEP 3: Paste to AI
+  └─ Come back here to AI chat
+  └─ Paste (Ctrl+V)
+  └─ Say: "Fix these bugs"
+  └─ Done! AI fixes everything!
+
+
+📋 EXAMPLE CONVERSATION WITH AI
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+You: Here are the error reports. Fix these bugs.
+
+     [paste the copied reports here]
+
+AI:  I'll analyze these reports and fix the bugs! I see 3 issues:
+     1. [Bug description]
+     2. [Bug description]  
+     3. [Bug description]
+     
+     Fixing now...
+     
+     [AI fixes the code]
+     
+     All bugs fixed! Test and let me know if any issues remain.
+
+
+👥 GIVING OTHERS ACCESS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Want a coder/helper to see bugs?
+
+1. Open dashboard (Ctrl+Shift+Alt+R)
+2. Click "Manage Users" button
+3. Type their email
+4. Choose "Coder" for full access
+5. Click "Grant Access"
+
+Done! They can now access dashboard.
+
+To remove them later:
+1. Click "Manage Users"
+2. Find their name
+3. Click red trash icon
+
+
+🔐 WHO CAN ACCESS?
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+✅ YOU (Ruski) - Always have access
+✅ People you add - Only if you give permission
+❌ Regular players - Cannot see or access
+
+
+📊 WHAT YOU'LL SEE
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+When you open dashboard:
+
+┌─────────────────────────────────────────────┐
+│  🔒 Admin Dashboard - Ruski 👑              │
+│  Total: 12 reports | Unresolved: 8         │
+│                                             │
+│  [Copy All] [Download] [Refresh]           │
+│  [Manage Users] [Close]                    │
+└─────────────────────────────────────────────┘
+
+Each report shows:
+  • What error happened
+  • What user was doing
+  • When it happened
+  • Technical details (for AI)
+
+
+💡 PRO TIPS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+TIP 1: Check Every Week
+  Monday morning → Check dashboard → Fix bugs
+
+TIP 2: Use "Copy All" Not Download
+  Faster! One click → paste to AI
+
+TIP 3: Fix Common Bugs First
+  Look at summary at bottom
+  Shows which errors happen most
+
+TIP 4: Don't Wait for Complaints
+  Check regularly even if no one complains
+
+TIP 5: Keep Dashboard Secret
+  Only share access with trusted helpers
+
+
+🚨 TROUBLESHOOTING
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Problem: Dashboard won't open
+Fix: Make sure you're logged in as Ruski first
+
+Problem: Says "no access"  
+Fix: You need to log in with avgelatt@gmail.com
+
+Problem: No reports showing
+Fix: Great! No bugs reported. Check back later.
+
+Problem: Copy button doesn't work
+Fix: Click "Download" instead, then copy from file
+
+
+📞 YOUR INFO
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Name:  Ruski
+Email: avgelatt@gmail.com  
+Phone: 913-213-8666
+Role:  Owner (cannot be changed/removed)
+
+
+🎮 WEEKLY ROUTINE (Recommended)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Every Monday:
+  8:00 AM - Open dashboard
+  8:01 AM - Copy reports (if any)
+  8:02 AM - Paste to AI
+  8:05 AM - Bugs fixed!
+  
+Total time: 5 minutes per week
+
+
+🎯 REMEMBER
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+✅ Ctrl+Shift+Alt+R = Open dashboard
+✅ "Copy All" = Get reports
+✅ Paste to AI = Bugs get fixed
+✅ Takes 30 seconds
+✅ Do weekly for best results
+
+
+═══════════════════════════════════════════════════════════════
+
+That's it! Really that simple.
+
+Questions? Just ask AI (me) anytime!
+
+═══════════════════════════════════════════════════════════════

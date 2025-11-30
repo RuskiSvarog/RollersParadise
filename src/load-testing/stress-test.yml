@@ -1,0 +1,72 @@
+# ============================================================
+# STRESS TEST - Find Your Breaking Point!
+# ============================================================
+# Gradually increase load until system breaks
+# Duration: 20 minutes
+# Purpose: Find maximum capacity
+# ============================================================
+
+config:
+  target: "https://{{ $processEnvironment.SUPABASE_PROJECT_ID }}.supabase.co/functions/v1/make-server-67091a4f"
+  phases:
+    # Phase 1: 100 players
+    - duration: 180
+      arrivalRate: 10
+      name: "100 players"
+    
+    # Phase 2: 200 players
+    - duration: 180
+      arrivalRate: 20
+      name: "200 players"
+    
+    # Phase 3: 300 players
+    - duration: 180
+      arrivalRate: 30
+      name: "300 players"
+    
+    # Phase 4: 500 players
+    - duration: 180
+      arrivalRate: 50
+      name: "500 players"
+    
+    # Phase 5: 750 players
+    - duration: 180
+      arrivalRate: 75
+      name: "750 players"
+    
+    # Phase 6: 1000 players (STRESS!)
+    - duration: 180
+      arrivalRate: 100
+      name: "1000 players - STRESS TEST"
+  
+  # Allow higher error rates for stress testing
+  ensure:
+    maxErrorRate: 5
+  
+  variables:
+    projectId: "{{ $processEnvironment.SUPABASE_PROJECT_ID }}"
+    anonKey: "{{ $processEnvironment.SUPABASE_ANON_KEY }}"
+
+scenarios:
+  - name: "Stress Test"
+    flow:
+      - get:
+          url: "/stats"
+          headers:
+            Authorization: "Bearer {{ anonKey }}"
+      - think: 2
+      
+      - get:
+          url: "/rooms"
+          headers:
+            Authorization: "Bearer {{ anonKey }}"
+      - think: 2
+      
+      - post:
+          url: "/stats/session"
+          headers:
+            Authorization: "Bearer {{ anonKey }}"
+            Content-Type: "application/json"
+          json:
+            playerId: "stress-player-{{ $randomNumber }}"
+      - think: 1

@@ -1,0 +1,144 @@
+# ============================================================
+# ROLLERS PARADISE LOAD TESTING CONFIGURATION
+# ============================================================
+# Developer: Ruski (avgelatt@gmail.com, 913-213-8666)
+# Purpose: Test real-world capacity and find breaking points
+# ============================================================
+
+config:
+  target: "https://{{ $processEnvironment.SUPABASE_PROJECT_ID }}.supabase.co/functions/v1/make-server-67091a4f"
+  phases:
+    # Phase 1: Warm-up (0 → 50 players over 2 minutes)
+    - duration: 120
+      arrivalRate: 5
+      name: "Warm-up phase"
+    
+    # Phase 2: Normal load (50 → 200 players over 3 minutes)
+    - duration: 180
+      arrivalRate: 15
+      name: "Normal load"
+    
+    # Phase 3: Stress test (200 → 500 players over 5 minutes)
+    - duration: 300
+      arrivalRate: 25
+      name: "Stress test"
+    
+    # Phase 4: Sustained load (hold 500 players for 5 minutes)
+    - duration: 300
+      arrivalRate: 25
+      name: "Sustained peak load"
+  
+  # Performance targets
+  ensure:
+    maxErrorRate: 1      # Max 1% errors
+    p95: 2000            # 95% of requests under 2 seconds
+    p99: 5000            # 99% of requests under 5 seconds
+  
+  # Environment variables
+  variables:
+    projectId: "{{ $processEnvironment.SUPABASE_PROJECT_ID }}"
+    anonKey: "{{ $processEnvironment.SUPABASE_ANON_KEY }}"
+
+# ============================================================
+# TEST SCENARIOS
+# ============================================================
+
+scenarios:
+  # Scenario 1: Lobby Browser (most common)
+  - name: "Lobby Browser"
+    weight: 40
+    flow:
+      - get:
+          url: "/stats"
+          headers:
+            Authorization: "Bearer {{ anonKey }}"
+      - think: 2
+      - get:
+          url: "/rooms"
+          headers:
+            Authorization: "Bearer {{ anonKey }}"
+      - think: 3
+      - get:
+          url: "/leaderboard"
+          headers:
+            Authorization: "Bearer {{ anonKey }}"
+      - think: 5
+  
+  # Scenario 2: Active Player (SSE connection)
+  - name: "Active Player with SSE"
+    weight: 30
+    flow:
+      # Initial lobby load
+      - get:
+          url: "/lobby/data?email=test{{ $randomNumber }}@test.com"
+          headers:
+            Authorization: "Bearer {{ anonKey }}"
+      - think: 3
+      
+      # Session heartbeat (every 30 seconds)
+      - loop:
+        - post:
+            url: "/stats/session"
+            headers:
+              Authorization: "Bearer {{ anonKey }}"
+              Content-Type: "application/json"
+            json:
+              playerId: "player-{{ $randomNumber }}"
+        - think: 30
+        count: 10
+  
+  # Scenario 3: Game Player (heavy interaction)
+  - name: "Game Player"
+    weight: 20
+    flow:
+      # Create/join room
+      - post:
+          url: "/rooms/create"
+          headers:
+            Authorization: "Bearer {{ anonKey }}"
+            Content-Type: "application/json"
+          json:
+            name: "Test Room {{ $randomNumber }}"
+            maxPlayers: 6
+            isPrivate: false
+            createdBy: "player-{{ $randomNumber }}"
+      
+      - think: 2
+      
+      # Place bets
+      - post:
+          url: "/rooms/{{ roomId }}/bet"
+          headers:
+            Authorization: "Bearer {{ anonKey }}"
+            Content-Type: "application/json"
+          json:
+            playerId: "player-{{ $randomNumber }}"
+            betType: "pass"
+            amount: 10
+      
+      - think: 5
+      
+      # Roll dice
+      - post:
+          url: "/rooms/{{ roomId }}/roll"
+          headers:
+            Authorization: "Bearer {{ anonKey }}"
+            Content-Type: "application/json"
+          json:
+            playerId: "player-{{ $randomNumber }}"
+      
+      - think: 3
+  
+  # Scenario 4: Quick Stats Check (monitoring)
+  - name: "Quick Stats"
+    weight: 10
+    flow:
+      - get:
+          url: "/stats"
+          headers:
+            Authorization: "Bearer {{ anonKey }}"
+      - think: 1
+      - get:
+          url: "/performance/stats"
+          headers:
+            Authorization: "Bearer {{ anonKey }}"

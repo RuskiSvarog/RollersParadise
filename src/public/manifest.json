@@ -1,0 +1,56 @@
+{
+  "name": "Rollers Paradise - Crapless Craps Casino",
+  "short_name": "Rollers Paradise",
+  "description": "Professional online crapless craps casino with fair play, multiplayer gaming, and authentic casino experience",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0a0f1e",
+  "theme_color": "#ef4444",
+  "orientation": "any",
+  "icons": [
+    {
+      "src": "/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["games", "entertainment"],
+  "screenshots": [
+    {
+      "src": "/screenshot-wide.png",
+      "sizes": "1280x720",
+      "type": "image/png",
+      "form_factor": "wide"
+    },
+    {
+      "src": "/screenshot-mobile.png",
+      "sizes": "750x1334",
+      "type": "image/png",
+      "form_factor": "narrow"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Play Now",
+      "short_name": "Play",
+      "description": "Start playing immediately",
+      "url": "/?action=play",
+      "icons": [{ "src": "/icon-play.png", "sizes": "96x96" }]
+    },
+    {
+      "name": "Multiplayer",
+      "short_name": "Multiplayer",
+      "description": "Join multiplayer game",
+      "url": "/?action=multiplayer",
+      "icons": [{ "src": "/icon-multiplayer.png", "sizes": "96x96" }]
+    }
+  ],
+  "prefer_related_applications": false
+}
