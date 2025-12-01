@@ -371,10 +371,10 @@ export function CasinoHomeScreen({ onStartGame, onShowAuth, onShowCreateAccount,
         <div className="absolute top-0 bottom-0 right-0 w-3 bg-gradient-to-b from-amber-600 via-red-500 to-amber-600" />
 
         {/* Corner accents */}
-        <div className="absolute top-0 left-0 w-[600px] h-[600px] bg-gradient-to-br from-red-600/20 to-transparent rounded-full" style={{ filter: 'blur(150px)' }} />
-        <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-gradient-to-bl from-amber-600/20 to-transparent rounded-full" style={{ filter: 'blur(150px)' }} />
-        <div className="absolute bottom-0 left-0 w-[600px] h-[600px] bg-gradient-to-tr from-yellow-600/20 to-transparent rounded-full" style={{ filter: 'blur(150px)' }} />
-        <div className="absolute bottom-0 right-0 w-[600px] h-[600px] bg-gradient-to-tl from-red-600/20 to-transparent rounded-full" style={{ filter: 'blur(150px)' }} />
+        <div className="absolute top-0 left-0 w-[600px] h-[600px] bg-gradient-to-br from-red-600/20 to-transparent rounded-full" />
+<div className="absolute top-0 right-0 w-[600px] h-[600px] bg-gradient-to-bl from-amber-600/20 to-transparent rounded-full" />
+<div className="absolute bottom-0 left-0 w-[600px] h-[600px] bg-gradient-to-tr from-yellow-600/20 to-transparent rounded-full" />
+<div className="absolute bottom-0 right-0 w-[600px] h-[600px] bg-gradient-to-tl from-red-600/20 to-transparent rounded-full" />
         {/* Floating sparkles and stars */}
         {[...Array(50)].map((_, i) => (
           <div
@@ -1048,8 +1048,8 @@ export function CasinoHomeScreen({ onStartGame, onShowAuth, onShowCreateAccount,
             onClick={(e) => e.stopPropagation()}
           >
               {/* Glow effect */}
-              <div className="absolute inset-0 bg-gradient-to-br from-pink-500 to-rose-600 rounded-3xl opacity-80 animate-pulse" style={{ filter: 'blur(150px)' }} />
-              
+              <div className="absolute inset-0 bg-gradient-to-br from-pink-500 to-rose-600 rounded-3xl opacity-80 animate-pulse" style={{ filter: 'blur(48px)' }} />
+
               {/* Modal content */}
               <div className="relative bg-gradient-to-br from-pink-900 via-rose-950 to-pink-900 rounded-3xl p-8 max-w-md w-full border-4 border-pink-400 shadow-2xl">
                 <div className="text-center">
