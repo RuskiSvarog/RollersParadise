@@ -46,7 +46,7 @@ export function LevelUpModal({ newLevel, rewards, onClose }: LevelUpModalProps) 
 
       <div className="relative max-w-2xl w-full animate-in zoom-in-0 spin-in-180 duration-800">
         {/* Massive Outer Glow */}
-        <div className="absolute inset-0 bg-gradient-to-br from-yellow-400 via-orange-500 to-red-600 rounded-3xl blur-3xl opacity-60 animate-pulse" />
+        <div className="absolute inset-0 bg-gradient-to-br from-yellow-400 via-orange-500 to-red-600 rounded-3xl opacity-60 animate-pulse" style={{ filter: 'blur(48px)' }} />
         
         {/* Main Container */}
         <div className="relative bg-gradient-to-br from-black via-purple-900 to-black border-4 border-yellow-500 rounded-3xl shadow-2xl shadow-yellow-500/50 overflow-hidden">

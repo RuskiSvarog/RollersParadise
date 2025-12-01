@@ -153,7 +153,7 @@ export function LeaderboardModal({ onClose, currentPlayerEmail }: LeaderboardMod
     <div className="fixed inset-0 bg-black/95 flex items-center justify-center z-50 p-4 overflow-y-auto">
       <div className="relative max-w-5xl w-full animate-in fade-in zoom-in-95 slide-in-from-bottom-8 duration-300">
         {/* Outer Glow */}
-        <div className="absolute inset-0 bg-gradient-to-br from-purple-600 via-blue-600 to-cyan-600 rounded-3xl blur-3xl opacity-40" />
+        <div className="absolute inset-0 bg-gradient-to-br from-purple-600 via-blue-600 to-cyan-600 rounded-3xl opacity-40" style={{ filter: 'blur(48px)' }} />
         
         {/* Main Container */}
         <div className="relative bg-gradient-to-br from-black via-gray-900 to-black border-4 border-blue-500 rounded-3xl shadow-2xl shadow-blue-500/50 overflow-hidden">

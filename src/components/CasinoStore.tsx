@@ -624,8 +624,8 @@ export function CasinoStore({ isOpen, onClose, userEmail, currentBalance, onBala
 
               {/* EXCLUSIVE BOOST CARDS CALLOUT - VIP ONLY */}
               <div className="mb-8 bg-gradient-to-br from-purple-900/80 to-blue-900/80 border-4 border-yellow-400 rounded-2xl p-6 relative overflow-hidden">
-                <div className="absolute top-0 right-0 w-32 h-32 bg-yellow-400/10 rounded-full blur-3xl" />
-                <div className="absolute bottom-0 left-0 w-32 h-32 bg-purple-400/10 rounded-full blur-3xl" />
+                <div className="absolute top-0 right-0 w-32 h-32 bg-yellow-400/10 rounded-full" style={{ filter: 'blur(48px)' }} />
+                <div className="absolute bottom-0 left-0 w-32 h-32 bg-purple-400/10 rounded-full" style={{ filter: 'blur(48px)' }} />
                 
                 <div className="relative z-10">
                   <div className="flex items-center gap-3 mb-4">

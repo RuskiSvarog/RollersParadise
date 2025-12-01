@@ -139,7 +139,7 @@ npm run dev
 
 **What you'll see:**
 ```
-> rollers-paradise dev
+> rollers-paradise@1.0.0 dev
 > vite
 
   VITE v5.x.x  ready in XXX ms

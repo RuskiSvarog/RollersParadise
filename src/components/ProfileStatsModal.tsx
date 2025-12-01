@@ -111,7 +111,7 @@ export function ProfileStatsModal({ onClose, playerName, playerEmail, currentBal
     <div className="fixed inset-0 bg-black/95 flex items-center justify-center z-50 p-4 overflow-y-auto">
       <div className="relative max-w-6xl w-full animate-in fade-in zoom-in-95 slide-in-from-bottom-12 duration-300">
         {/* Outer Glow */}
-        <div className="absolute inset-0 bg-gradient-to-br from-yellow-400 via-orange-500 to-red-600 rounded-3xl blur-3xl opacity-40" />
+        <div className="absolute inset-0 bg-gradient-to-br from-yellow-400 via-orange-500 to-red-600 rounded-3xl opacity-40" style={{ filter: 'blur(48px)' }} />
         
         {/* Main Container */}
         <div className="relative bg-gradient-to-br from-black via-gray-900 to-black border-4 border-yellow-500 rounded-3xl shadow-2xl shadow-yellow-500/50 overflow-hidden">

@@ -1,5 +1,5 @@
 // API endpoint to claim daily bonus
-import type { NextApiRequest, NextApiResponse } from 'next';
+import type { NextApiRequest, NextApiResponse } from "next";
 
 // In-memory storage for demo (replace with real database in production)
 const bonusClaimTimes = new Map<string, number>();
@@ -9,16 +9,18 @@ const COOLDOWN_PERIOD = 24 * 60 * 60 * 1000; // 24 hours
 
 export default async function handler(
   req: NextApiRequest,
-  res: NextApiResponse
+  res: NextApiResponse,
 ) {
-  if (req.method !== 'POST') {
-    return res.status(405).json({ error: 'Method not allowed' });
+  if (req.method !== "POST") {
+    return res
+      .status(405)
+      .json({ error: "Method not allowed" });
   }
 
   const { email } = req.body;
 
-  if (!email || typeof email !== 'string') {
-    return res.status(400).json({ error: 'Email is required' });
+  if (!email || typeof email !== "string") {
+    return res.status(400).json({ error: "Email is required" });
   }
 
   const now = Date.now();
@@ -27,14 +29,19 @@ export default async function handler(
   // Check if user can claim
   if (lastClaimTime) {
     const timeSinceLastClaim = now - lastClaimTime;
-    
+
     if (timeSinceLastClaim < COOLDOWN_PERIOD) {
-      const timeRemaining = COOLDOWN_PERIOD - timeSinceLastClaim;
-      const hours = Math.floor(timeRemaining / (1000 * 60 * 60));
-      const minutes = Math.floor((timeRemaining % (1000 * 60 * 60)) / (1000 * 60));
-      
+      const timeRemaining =
+        COOLDOWN_PERIOD - timeSinceLastClaim;
+      const hours = Math.floor(
+        timeRemaining / (1000 * 60 * 60),
+      );
+      const minutes = Math.floor(
+        (timeRemaining % (1000 * 60 * 60)) / (1000 * 60),
+      );
+
       return res.status(429).json({
-        error: 'Too early to claim',
+        error: "Too early to claim",
         message: `You can claim your next bonus in ${hours}h ${minutes}m`,
         nextClaimTime: lastClaimTime + COOLDOWN_PERIOD,
         timeRemaining,

@@ -84,14 +84,11 @@ export function TropicalDecorations() {
           <div className="relative">
             {/* Icon glow */}
             <div 
-              className="absolute inset-0 rounded-full blur-3xl"
+              className="absolute inset-0 rounded-full"
               style={{
                 width: '200px',
                 height: '200px',
-                background: config.iconGlow,
-                transform: 'translate(-50%, -50%)',
-                left: '50%',
-                top: '50%'
+                filter: 'blur(48px)'
               }}
             />
             {/* Icon core */}

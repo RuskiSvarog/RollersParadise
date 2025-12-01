@@ -207,7 +207,7 @@ const diceStyle = vipStatus.isVIP && selectedDiceColor
 Show toast when someone becomes VIP:
 
 ```typescript
-import { toast } from 'sonner';
+import { toast } from 'sonner@2.0.3';
 
 // After purchase:
 toast.success(

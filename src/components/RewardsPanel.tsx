@@ -74,8 +74,8 @@ export function RewardsPanel({ isOpen, onClose, onChipsAwarded }: RewardsPanelPr
             {/* Header */}
             <div className="bg-gradient-to-r from-yellow-600 to-orange-600 p-6 rounded-t-xl relative overflow-hidden">
               <div className="absolute inset-0 opacity-20">
-                <div className="absolute top-0 left-0 w-32 h-32 bg-white rounded-full blur-3xl animate-pulse" />
-                <div className="absolute bottom-0 right-0 w-40 h-40 bg-white rounded-full blur-3xl animate-pulse" style={{ animationDelay: '1s' }} />
+                <div className="absolute top-0 left-0 w-32 h-32 bg-white rounded-full animate-pulse" style={{ filter: 'blur(48px)' }} />
+                <div className="absolute bottom-0 right-0 w-40 h-40 bg-white rounded-full animate-pulse" style={{ animationDelay: '1s', filter: 'blur(48px)' }} />
               </div>
               
               <div className="flex justify-between items-center relative z-10">
