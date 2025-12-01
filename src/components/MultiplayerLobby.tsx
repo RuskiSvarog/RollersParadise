@@ -476,30 +476,8 @@ export function MultiplayerLobby({ playerName, onJoinRoom, onStartSinglePlayer, 
           }}
         />
 
-        {/* Floating dice background */}
-        {[...Array(12)].map((_, i) => (
-          <motion.div
-            key={`dice-bg-${i}`}
-            className="absolute"
-            style={{
-              left: `${10 + i * 8}%`,
-              top: `${20 + (i % 3) * 25}%`,
-            }}
-            animate={{
-              y: [0, -30, 0],
-              rotate: [0, 360],
-              opacity: [0.1, 0.3, 0.1],
-            }}
-            transition={{
-              duration: 8 + i,
-              delay: i * 0.5,
-              repeat: Infinity,
-              ease: "easeInOut"
-            }}
-          >
-            <Dices className="w-12 h-12 text-white/20" />
-          </motion.div>
-        ))}
+        {/* Floating dice background - REMOVED due to production rendering issues */}
+        {/* The dice decorations were showing as black squares in production */}
       </div>
 
       {/* Content Container */}
@@ -1067,7 +1045,7 @@ export function MultiplayerLobby({ playerName, onJoinRoom, onStartSinglePlayer, 
               onClick={(e) => e.stopPropagation()}
             >
               {/* Glow effect */}
-              <div className="absolute inset-0 bg-gradient-to-br from-pink-500 to-rose-600 rounded-3xl blur-3xl opacity-80 animate-pulse" />
+              <div className="absolute inset-0 bg-gradient-to-br from-pink-500 to-rose-600 rounded-3xl opacity-80 animate-pulse" style={{ filter: 'blur(48px)' }} />
               
               {/* Modal content */}
               <div className="relative bg-gradient-to-br from-pink-900 via-rose-950 to-pink-900 rounded-3xl p-8 max-w-md w-full border-4 border-pink-400 shadow-2xl">

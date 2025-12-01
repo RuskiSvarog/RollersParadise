@@ -372,9 +372,10 @@ export function CasinoHomeScreen({ onStartGame, onShowAuth, onShowCreateAccount,
 
         {/* Corner accents */}
         <div className="absolute top-0 left-0 w-[600px] h-[600px] bg-gradient-to-br from-red-600/20 to-transparent rounded-full" />
-<div className="absolute top-0 right-0 w-[600px] h-[600px] bg-gradient-to-bl from-amber-600/20 to-transparent rounded-full" />
-<div className="absolute bottom-0 left-0 w-[600px] h-[600px] bg-gradient-to-tr from-yellow-600/20 to-transparent rounded-full" />
-<div className="absolute bottom-0 right-0 w-[600px] h-[600px] bg-gradient-to-tl from-red-600/20 to-transparent rounded-full" />
+        <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-gradient-to-bl from-amber-600/20 to-transparent rounded-full" />
+        <div className="absolute bottom-0 left-0 w-[600px] h-[600px] bg-gradient-to-tr from-yellow-600/20 to-transparent rounded-full" />
+        <div className="absolute bottom-0 right-0 w-[600px] h-[600px] bg-gradient-to-tl from-red-600/20 to-transparent rounded-full" />
+
         {/* Floating sparkles and stars */}
         {[...Array(50)].map((_, i) => (
           <div
@@ -406,21 +407,8 @@ export function CasinoHomeScreen({ onStartGame, onShowAuth, onShowCreateAccount,
           </div>
         ))}
 
-        {/* Floating dice */}
-        {[...Array(8)].map((_, i) => (
-          <div
-            key={`dice-${i}`}
-            className="absolute animate-pulse"
-            style={{
-              left: `${10 + i * 11}%`,
-              top: `${20 + (i % 3) * 25}%`,
-              animationDuration: `${6 + i}s`,
-              animationDelay: `${i * 0.3}s`,
-            }}
-          >
-            <Dices className="w-16 h-16 text-white/20" />
-          </div>
-        ))}
+        {/* Floating dice - REMOVED due to production rendering issues */}
+        {/* The dice decorations were showing as black squares in production */}
       </div>
 
       {/* Content Container */}
@@ -1049,7 +1037,7 @@ export function CasinoHomeScreen({ onStartGame, onShowAuth, onShowCreateAccount,
           >
               {/* Glow effect */}
               <div className="absolute inset-0 bg-gradient-to-br from-pink-500 to-rose-600 rounded-3xl opacity-80 animate-pulse" style={{ filter: 'blur(48px)' }} />
-
+              
               {/* Modal content */}
               <div className="relative bg-gradient-to-br from-pink-900 via-rose-950 to-pink-900 rounded-3xl p-8 max-w-md w-full border-4 border-pink-400 shadow-2xl">
                 <div className="text-center">
