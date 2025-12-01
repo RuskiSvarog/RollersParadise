@@ -28,7 +28,7 @@ export const Gift = ({ className = "w-6 h-6", size }: IconProps) => (
 );
 
 export const Star = ({ className = "w-6 h-6", size }: IconProps) => (
-  <svg className={className} width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+  <svg className={className} width={size} height={size} viewBox="0 0 24 24" fill="currentColor" stroke="none">
     <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
   </svg>
 );
@@ -76,7 +76,7 @@ export const Award = ({ className = "w-6 h-6", size }: IconProps) => (
 );
 
 export const Sparkles = ({ className = "w-6 h-6", size }: IconProps) => (
-  <svg className={className} width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+  <svg className={className} width={size} height={size} viewBox="0 0 24 24" fill="currentColor" stroke="none">
     <path d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z"></path>
     <path d="M5 3v4"></path>
     <path d="M19 17v4"></path>

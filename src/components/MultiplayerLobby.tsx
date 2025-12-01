@@ -89,7 +89,7 @@ export function MultiplayerLobby({ playerName, onJoinRoom, onStartSinglePlayer, 
         };
 
         statsEventSource.onerror = (error) => {
-          console.error('SSE stats connection error, will reconnect in 5s');
+          console.log('⚠️ Stats SSE connection closed, will reconnect in 5s');
           statsEventSource?.close();
           
           // Fallback to one-time fetch
@@ -152,7 +152,7 @@ export function MultiplayerLobby({ playerName, onJoinRoom, onStartSinglePlayer, 
         };
 
         roomsEventSource.onerror = (error) => {
-          console.error('SSE rooms connection error, will reconnect in 5s');
+          console.log('⚠️ Rooms SSE connection closed, will reconnect in 5s');
           roomsEventSource?.close();
           
           // Reconnect after 5 seconds
@@ -468,16 +468,9 @@ export function MultiplayerLobby({ playerName, onJoinRoom, onStartSinglePlayer, 
       {/* Vegas Background */}
       <div className="absolute inset-0">
         <div className="absolute inset-0 bg-gradient-to-br from-red-950 via-black to-purple-950" />
-        <div 
-          className="absolute inset-0 opacity-10"
-          style={{
-            backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23FFD700' fill-opacity='1'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`,
-            backgroundSize: '60px 60px'
-          }}
-        />
-
-        {/* Floating dice background - REMOVED due to production rendering issues */}
-        {/* The dice decorations were showing as black squares in production */}
+        
+        {/* Subtle glow effect */}
+        <div className="absolute inset-0 bg-gradient-to-t from-transparent via-transparent to-purple-900/10" />
       </div>
 
       {/* Content Container */}

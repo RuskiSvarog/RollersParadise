@@ -220,21 +220,7 @@ export function TropicalDecorations() {
         {/* Wave/Texture Effects */}
         {theme === 'tropical' && (
           <>
-            <div 
-              className="absolute bottom-[35%] left-0 right-0 h-24 opacity-20"
-              style={{
-                background: 'repeating-linear-gradient(90deg, transparent, transparent 40px, rgba(255, 255, 255, 0.15) 40px, rgba(255, 255, 255, 0.15) 80px)',
-                transform: 'skewY(-1deg)'
-              }}
-            />
-
-            <div 
-              className="absolute bottom-[28%] left-0 right-0 h-20 opacity-15"
-              style={{
-                background: 'repeating-linear-gradient(90deg, transparent, transparent 60px, rgba(255, 255, 255, 0.2) 60px, rgba(255, 255, 255, 0.2) 120px)',
-                transform: 'skewY(-0.5deg)'
-              }}
-            />
+            {/* REMOVED - was causing rendering bugs */}
           </>
         )}
 
@@ -249,67 +235,29 @@ export function TropicalDecorations() {
 
         {/* Classic Casino Floor Pattern */}
         {theme === 'classic' && (
-          <div 
-            className="absolute bottom-0 left-0 right-0 opacity-20"
-            style={{
-              height: '22%',
-              backgroundImage: 'repeating-linear-gradient(45deg, transparent, transparent 35px, rgba(220, 38, 38, 0.3) 35px, rgba(220, 38, 38, 0.3) 70px)',
-              backgroundSize: '100px 100px'
-            }}
-          />
+          <>
+            {/* REMOVED - was causing rendering bugs */}
+          </>
         )}
 
         {/* Neon Grid Floor */}
         {theme === 'neon' && (
-          <div 
-            className="absolute bottom-0 left-0 right-0 opacity-30"
-            style={{
-              height: '22%',
-              backgroundImage: `
-                linear-gradient(rgba(236, 72, 153, 0.5) 2px, transparent 2px),
-                linear-gradient(90deg, rgba(168, 85, 247, 0.5) 2px, transparent 2px)
-              `,
-              backgroundSize: '50px 50px'
-            }}
-          />
+          <>
+            {/* REMOVED - was causing rendering bugs */}
+          </>
         )}
 
         {/* Luxury Shine Pattern */}
         {theme === 'luxury' && (
-          <div 
-            className="absolute bottom-0 left-0 right-0 opacity-40"
-            style={{
-              height: '22%',
-              backgroundImage: 'repeating-linear-gradient(90deg, transparent, transparent 30px, rgba(251, 191, 36, 0.3) 30px, rgba(251, 191, 36, 0.3) 31px)',
-            }}
-          />
+          <>
+            {/* REMOVED - was causing rendering bugs */}
+          </>
         )}
 
         {/* Beach/Floor Texture */}
         {theme === 'tropical' && (
           <>
-            <div 
-              className="absolute bottom-0 left-0 right-0 opacity-10"
-              style={{
-                height: '22%',
-                backgroundImage: `
-                  radial-gradient(circle at 20% 50%, transparent 0%, rgba(217, 119, 6, 0.3) 1px, transparent 1px),
-                  radial-gradient(circle at 80% 30%, transparent 0%, rgba(180, 83, 9, 0.3) 1px, transparent 1px),
-                  radial-gradient(circle at 45% 70%, transparent 0%, rgba(146, 64, 14, 0.3) 1px, transparent 1px)
-                `,
-                backgroundSize: '40px 40px, 50px 50px, 35px 35px',
-                backgroundPosition: '0 0, 25px 25px, 10px 15px'
-              }}
-            />
-
-            {/* Foamy Wave Edge */}
-            <div 
-              className="absolute bottom-[22%] left-0 right-0 h-8 opacity-40"
-              style={{
-                background: 'linear-gradient(to bottom, rgba(255, 255, 255, 0.6) 0%, rgba(255, 255, 255, 0.3) 50%, transparent 100%)',
-                filter: 'blur(4px)'
-              }}
-            />
+            {/* REMOVED - was causing rendering bugs */}
           </>
         )}
 

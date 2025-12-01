@@ -350,65 +350,19 @@ export function CasinoHomeScreen({ onStartGame, onShowAuth, onShowCreateAccount,
         }}
       />
       
-      {/* Rich Vegas Background */}
+      {/* Rich Vegas Background - SIMPLIFIED FOR PRODUCTION */}
       <div className="absolute inset-0">
         {/* Base gradient */}
         <div className="absolute inset-0 bg-gradient-to-br from-red-950 via-black to-amber-950" />
-        
-        {/* Casino pattern overlay */}
-        <div 
-          className="absolute inset-0 opacity-10"
-          style={{
-            backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23FFD700' fill-opacity='1'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`,
-            backgroundSize: '60px 60px'
-          }}
-        />
 
         {/* Vegas lights border - STATIC, NO ANIMATION */}
         <div className="absolute top-0 left-0 right-0 h-3 bg-gradient-to-r from-red-600 via-yellow-500 to-red-600" />
         <div className="absolute bottom-0 left-0 right-0 h-3 bg-gradient-to-r from-amber-600 via-red-500 to-amber-600" />
         <div className="absolute top-0 bottom-0 left-0 w-3 bg-gradient-to-b from-red-600 via-yellow-500 to-red-600" />
         <div className="absolute top-0 bottom-0 right-0 w-3 bg-gradient-to-b from-amber-600 via-red-500 to-amber-600" />
-
-        {/* Corner accents */}
-        <div className="absolute top-0 left-0 w-[600px] h-[600px] bg-gradient-to-br from-red-600/20 to-transparent rounded-full" />
-        <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-gradient-to-bl from-amber-600/20 to-transparent rounded-full" />
-        <div className="absolute bottom-0 left-0 w-[600px] h-[600px] bg-gradient-to-tr from-yellow-600/20 to-transparent rounded-full" />
-        <div className="absolute bottom-0 right-0 w-[600px] h-[600px] bg-gradient-to-tl from-red-600/20 to-transparent rounded-full" />
-
-        {/* Floating sparkles and stars */}
-        {[...Array(50)].map((_, i) => (
-          <div
-            key={`sparkle-${i}`}
-            className="absolute w-2 h-2 rounded-full animate-pulse"
-            style={{
-              left: `${Math.random() * 100}%`,
-              top: `${Math.random() * 100}%`,
-              background: i % 3 === 0 ? '#FFD700' : i % 3 === 1 ? '#FFA500' : '#FF6B6B',
-              animationDuration: `${3 + Math.random() * 2}s`,
-              animationDelay: `${Math.random() * 5}s`,
-            }}
-          />
-        ))}
-
-        {/* Animated coin rain */}
-        {[...Array(15)].map((_, i) => (
-          <div
-            key={`coin-${i}`}
-            className="absolute w-8 h-8 bg-gradient-to-br from-yellow-400 to-amber-600 rounded-full border-2 border-yellow-300 shadow-lg animate-bounce"
-            style={{
-              left: `${5 + i * 6}%`,
-              top: `${10 + (i % 5) * 20}%`,
-              animationDuration: `${2 + Math.random() * 1}s`,
-              animationDelay: `${i * 0.1}s`,
-            }}
-          >
-            <div className="absolute inset-1 bg-gradient-to-br from-yellow-200 to-transparent rounded-full" />
-          </div>
-        ))}
-
-        {/* Floating dice - REMOVED due to production rendering issues */}
-        {/* The dice decorations were showing as black squares in production */}
+        
+        {/* Subtle glow effects - no problematic elements */}
+        <div className="absolute inset-0 bg-gradient-to-t from-transparent via-transparent to-yellow-900/10" />
       </div>
 
       {/* Content Container */}
