@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { AlertTriangle, Bug } from 'lucide-react';
 import { reportError, reportNetworkError, reportAPIError } from '../utils/globalErrorHandler';
 import { ERROR_CODES } from '../utils/errorCodes';
-import { toast } from 'sonner@2.0.3';
+import { toast } from 'sonner';
 
 /**
  * Error Test Panel - For developers to test the error reporting system

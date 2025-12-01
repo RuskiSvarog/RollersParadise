@@ -10,7 +10,7 @@
  */
 
 import { projectId, publicAnonKey } from './supabase/info';
-import { toast } from 'sonner@2.0.3';
+import { toast } from 'sonner';
 
 export interface PaymentSuccessData {
   type: 'chips' | 'membership';

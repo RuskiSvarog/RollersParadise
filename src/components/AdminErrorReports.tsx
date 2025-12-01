@@ -1,7 +1,7 @@
 import React, { useState, useEffect, lazy, Suspense } from 'react';
 import { Download, X, AlertCircle, Lock, Copy, Users, Shield, UserPlus, Trash2, Trophy, CheckCircle } from 'lucide-react';
 import { fetchErrorReports, fetchAllReports, ErrorReport, deleteErrorReport } from '../utils/fetchErrorReports';
-import { toast } from 'sonner@2.0.3';
+import { toast } from 'sonner';
 import { checkAdminAccess, getCurrentAdminInfo, grantAdminAccess, revokeAdminAccess, getAdminUsers, OWNER_INFO, AdminUser } from '../utils/adminPermissions';
 
 const AdminRewardsPanel = lazy(() => import('./AdminRewardsPanel').then(m => ({ default: m.AdminRewardsPanel })));

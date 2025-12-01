@@ -7,7 +7,7 @@ import {
   isDeviceAllowedToPlay,
   type DeviceInfo 
 } from '../utils/deviceDetection';
-import { toast } from 'sonner@2.0.3';
+import { toast } from 'sonner';
 import { projectId, publicAnonKey } from '../utils/supabase/info';
 
 interface DeviceConsentModalProps {

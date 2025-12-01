@@ -4,7 +4,7 @@
  */
 
 import { useEffect, useState } from 'react';
-import { toast } from 'sonner@2.0.3';
+import { toast } from 'sonner';
 import { getStoredDeviceConsent, DeviceInfo } from '../utils/deviceDetection';
 import {
   getOptimalSettingsForDevice,

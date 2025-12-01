@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Users, UserPlus, UserX, Shield, Code, Eye, X, Search, Check, AlertCircle } from 'lucide-react';
-import { toast } from 'sonner@2.0.3';
+import { toast } from 'sonner';
 import { OWNER_INFO } from '../utils/adminPermissions';
 
 interface Friend {

@@ -1,7 +1,7 @@
 // Global notification utilities
 // This file provides backward-compatible alert/confirm replacements
 
-import { toast } from 'sonner@2.0.3';
+import { toast } from 'sonner';
 
 // Temporary storage for notification context
 let notificationContext: any = null;

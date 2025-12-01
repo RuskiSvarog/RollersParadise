@@ -1,7 +1,7 @@
 import { useState, useEffect, useCallback } from 'react';
 import { createClient } from '../utils/supabase/client';
 import { projectId, publicAnonKey } from '../utils/supabase/info';
-import { toast } from 'sonner@2.0.3';
+import { toast } from 'sonner';
 import { Trash2, RotateCcw, Trophy } from 'lucide-react';
 import { CrapsHeader } from './CrapsHeader';
 import { CrapsTable } from './CrapsTable';

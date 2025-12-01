@@ -263,7 +263,7 @@ Rollers Paradise is a **comprehensive online crapless craps casino platform** wi
 ### **Libraries**
 - recharts (for charts/graphs)
 - react-hook-form@7.55.0 (forms)
-- sonner@2.0.3 (toast notifications)
+- sonner (toast notifications)
 - Crypto API (fairness/randomness)
 
 ### **APIs & Integrations**

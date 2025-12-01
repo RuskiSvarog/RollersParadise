@@ -1,5 +1,5 @@
 import { supabase } from '../lib/supabaseClient';
-import { toast } from 'sonner@2.0.3';
+import { toast } from 'sonner';
 import { ErrorDetails } from './errorCodes';
 import { fetchErrorReports, displayErrorReports } from './fetchErrorReports';
 

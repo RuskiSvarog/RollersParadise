@@ -1,6 +1,6 @@
 import React, { Component, ErrorInfo, ReactNode } from 'react';
 import { sendErrorToAI } from '../utils/simpleErrorReporter';
-import { toast } from 'sonner@2.0.3';
+import { toast } from 'sonner';
 
 interface Props {
   children: ReactNode;

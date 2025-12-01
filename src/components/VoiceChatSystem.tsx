@@ -3,7 +3,7 @@ import { motion, AnimatePresence } from 'motion/react';
 import { Mic, MicOff, Volume2, VolumeX, Flag, Bug, UserX, MessageSquareOff, Settings, Minimize2, Maximize2, MessageCircle, Send } from 'lucide-react';
 import { createClient } from '../utils/supabase/client';
 import { projectId, publicAnonKey } from '../utils/supabase/info';
-import { toast } from 'sonner@2.0.3';
+import { toast } from 'sonner';
 
 interface VoiceChatSystemProps {
   roomId: string;

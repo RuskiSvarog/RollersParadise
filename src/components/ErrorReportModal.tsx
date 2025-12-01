@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { X, Copy, Send, CheckCircle, AlertCircle } from 'lucide-react';
 import { ErrorDetails, ErrorReport, getErrorMessage, getErrorSeverity } from '../utils/errorCodes';
-import { toast } from 'sonner@2.0.3';
+import { toast } from 'sonner';
 
 interface ErrorReportModalProps {
   errorDetails: ErrorDetails;
