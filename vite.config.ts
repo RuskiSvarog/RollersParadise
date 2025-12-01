@@ -1,5 +1,4 @@
-
-  import { defineConfig } from 'vite'
+import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 import path from 'path'
 
@@ -20,12 +19,7 @@ export default defineConfig({
           'react-vendor': ['react', 'react-dom'],
           'ui-vendor': ['lucide-react', 'recharts', 'motion'],
         }
-      },
-      // Exclude Node.js built-ins and Supabase server files
-      external: [
-        /^node:.*/,
-        /^supabase\/functions\/.*/,
-      ]
+      }
     }
   },
   server: {
