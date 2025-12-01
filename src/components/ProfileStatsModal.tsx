@@ -342,7 +342,7 @@ export function ProfileStatsModal({ onClose, playerName, playerEmail, currentBal
                           <div className="flex-1">
                             <div className="flex items-center gap-2 mb-1">
                               <h4 className="text-white font-bold">{achievement.name}</h4>
-                              {achievement.unlocked && <Star className="w-4 h-4 text-yellow-400" fill="currentColor" />}
+                              {achievement.unlocked && <Star className="w-4 h-4 text-yellow-400" />}
                             </div>
                             <p className="text-gray-400 text-sm mb-2">{achievement.description}</p>
                             <div className="flex items-center gap-2">

@@ -152,12 +152,12 @@ export function PlayerProfileModal({
           {biggestWin > 0 && (
             <div className="bg-gradient-to-r from-yellow-500/20 to-orange-600/20 border border-yellow-500 rounded-xl p-4 mb-6">
               <div className="flex items-center justify-center gap-3">
-                <Flame className="w-6 h-6 text-orange-400" fill="currentColor" />
+                <Flame className="w-6 h-6 text-orange-400" />
                 <div className="text-center">
                   <div className="text-yellow-400 text-sm">Biggest Win</div>
                   <div className="text-white text-3xl font-bold">${biggestWin.toFixed(2)}</div>
                 </div>
-                <Flame className="w-6 h-6 text-orange-400" fill="currentColor" />
+                <Flame className="w-6 h-6 text-orange-400" />
               </div>
             </div>
           )}

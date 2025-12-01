@@ -511,11 +511,11 @@ export function MultiplayerLobby({ playerName, onJoinRoom, onStartSinglePlayer, 
                   🎲 LIVE TABLES 🎲
                 </motion.h1>
                 <div className="flex items-center justify-center gap-2 mt-2">
-                  <Star className="w-4 h-4 text-yellow-400" fill="currentColor" />
+                  <Star className="w-4 h-4 text-yellow-400" />
                   <p className="text-yellow-300" style={{ fontSize: '1rem', fontWeight: 700, letterSpacing: '0.1em' }}>
                     JOIN THE ACTION • PLAY WITH FRIENDS • WIN BIG
                   </p>
-                  <Star className="w-4 h-4 text-yellow-400" fill="currentColor" />
+                  <Star className="w-4 h-4 text-yellow-400" />
                 </div>
               </div>
             </motion.div>
@@ -606,7 +606,7 @@ export function MultiplayerLobby({ playerName, onJoinRoom, onStartSinglePlayer, 
               <span className="text-yellow-300" style={{ fontSize: '1rem', fontWeight: 700 }}>
                 Welcome, {playerName}!
               </span>
-              <Sparkles className="w-4 h-4 text-yellow-400" fill="currentColor" />
+              <Sparkles className="w-4 h-4 text-yellow-400" />
             </div>
           </motion.div>
         </div>
@@ -711,7 +711,7 @@ export function MultiplayerLobby({ playerName, onJoinRoom, onStartSinglePlayer, 
                 >
                   VIEW LEADERBOARD
                 </span>
-                <Crown className="w-6 h-6 text-white" fill="currentColor" />
+                <Crown className="w-6 h-6 text-white" />
               </div>
               
               {/* Sub text */}
@@ -744,7 +744,7 @@ export function MultiplayerLobby({ playerName, onJoinRoom, onStartSinglePlayer, 
             >
               <div className="flex items-center gap-4">
                 <div className="w-14 h-14 bg-yellow-400 rounded-full flex items-center justify-center shadow-lg">
-                  <Sparkles className="w-8 h-8 text-green-700" fill="currentColor" />
+                  <Sparkles className="w-8 h-8 text-green-700" />
                 </div>
                 <div className="text-left">
                   <div className="text-white" style={{ fontSize: '1.5rem', fontWeight: 900, textShadow: '0 2px 10px rgba(0,0,0,0.5)' }}>
@@ -767,7 +767,7 @@ export function MultiplayerLobby({ playerName, onJoinRoom, onStartSinglePlayer, 
           className="mb-8"
         >
           <div className="flex items-center gap-3 mb-6">
-            <Flame className="w-8 h-8 text-orange-500" fill="currentColor" />
+            <Flame className="w-8 h-8 text-orange-500" />
             <h2 className="text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-red-500" style={{ fontSize: '2rem', fontWeight: 800 }}>
               🔥 LIVE TABLES
             </h2>
@@ -804,7 +804,7 @@ export function MultiplayerLobby({ playerName, onJoinRoom, onStartSinglePlayer, 
                     {/* Hot indicator for full/nearly full tables */}
                     {room.players >= room.maxPlayers - 1 && (
                       <div className="absolute -top-2 -right-2 bg-red-600 text-white px-3 py-1 rounded-full text-xs font-bold shadow-lg flex items-center gap-1 animate-pulse">
-                        <Flame className="w-3 h-3" fill="currentColor" />
+                        <Flame className="w-3 h-3" />
                         HOT!
                       </div>
                     )}
@@ -824,7 +824,7 @@ export function MultiplayerLobby({ playerName, onJoinRoom, onStartSinglePlayer, 
                           </div>
                         </div>
                       </div>
-                      <Crown className="w-6 h-6 text-yellow-400" fill="currentColor" />
+                      <Crown className="w-6 h-6 text-yellow-400" />
                     </div>
 
                     {/* Player avatars */}
@@ -897,7 +897,7 @@ export function MultiplayerLobby({ playerName, onJoinRoom, onStartSinglePlayer, 
           <div className="bg-gradient-to-r from-red-900 via-orange-900 to-red-900 border-2 border-orange-500 rounded-xl p-3 shadow-2xl overflow-hidden">
             <div className="flex items-center gap-3 mb-2">
               <div className="flex items-center gap-2 bg-orange-600 px-3 py-1 rounded-full">
-                <Flame className="w-4 h-4 text-white" fill="currentColor" />
+                <Flame className="w-4 h-4 text-white" />
                 <span className="text-white" style={{ fontSize: '0.75rem', fontWeight: 800 }}>HOT STREAKS</span>
               </div>
               <div className="flex-1 h-px bg-gradient-to-r from-orange-500 to-transparent" />
@@ -917,7 +917,7 @@ export function MultiplayerLobby({ playerName, onJoinRoom, onStartSinglePlayer, 
                     <p className="text-yellow-300 flex-1" style={{ fontSize: '1.125rem', fontWeight: 700 }}>
                       {hotStreaks[tickerPosition]?.message}
                     </p>
-                    <Sparkles className="w-5 h-5 text-yellow-400" fill="currentColor" />
+                    <Sparkles className="w-5 h-5 text-yellow-400" />
                   </div>
                 </motion.div>
               </AnimatePresence>
@@ -1061,7 +1061,7 @@ export function MultiplayerLobby({ playerName, onJoinRoom, onStartSinglePlayer, 
                     <div className="flex items-center justify-center gap-3 mb-3">
                       <DollarSign className={`w-8 h-8 ${bonusStatus.canClaim ? 'text-yellow-400' : 'text-gray-500'}`} />
                       <span className={`${bonusStatus.canClaim ? 'text-yellow-300' : 'text-gray-500'}`} style={{ fontSize: '3rem', fontWeight: 900 }}>500</span>
-                      <Sparkles className={`w-8 h-8 ${bonusStatus.canClaim ? 'text-yellow-400' : 'text-gray-500'}`} fill="currentColor" />
+                      <Sparkles className={`w-8 h-8 ${bonusStatus.canClaim ? 'text-yellow-400' : 'text-gray-500'}`} />
                     </div>
                     <p className={`${bonusStatus.canClaim ? 'text-yellow-200' : 'text-gray-500'}`} style={{ fontSize: '1rem', fontWeight: 700 }}>
                       FREE CHIPS

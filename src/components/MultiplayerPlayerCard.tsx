@@ -80,7 +80,7 @@ export function MultiplayerPlayerCard({
       {/* Host badge - top left */}
       {isHost && (
         <div className="absolute -top-2 -left-2 bg-gradient-to-r from-yellow-400 to-orange-500 text-black px-3 py-1 rounded-full text-xs font-bold shadow-lg flex items-center gap-1">
-          <Crown className="w-3 h-3" fill="currentColor" />
+          <Crown className="w-3 h-3" />
           HOST
         </div>
       )}

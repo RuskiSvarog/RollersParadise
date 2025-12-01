@@ -77,15 +77,15 @@ export function LevelUpModal({ newLevel, rewards, onClose }: LevelUpModalProps) 
                 {[...Array(8)].map((_, i) => (
                   <div
                     key={i}
-                    className="absolute animate-spin"
+                    className="absolute w-1 h-1 bg-yellow-400 rounded-full"
                     style={{
-                      top: '50%',
-                      left: '50%',
-                      transform: `translate(-50%, -50%) rotate(${i * 45}deg) translateX(80px)`,
-                      animationDuration: '4s',
+                      left: `${20 + (i * 15)}%`,
+                      top: `${10 + ((i % 3) * 30)}%`,
+                      animation: 'star-twinkle 2s ease-in-out infinite',
+                      animationDelay: `${i * 0.2}s`,
                     }}
                   >
-                    <Star className="w-4 h-4 text-yellow-400" fill="currentColor" />
+                    <Star className="w-4 h-4 text-yellow-400" />
                   </div>
                 ))}
               </div>
@@ -200,6 +200,10 @@ export function LevelUpModal({ newLevel, rewards, onClose }: LevelUpModalProps) 
           0% { background-position: 0% 50%; }
           50% { background-position: 100% 50%; }
           100% { background-position: 0% 50%; }
+        }
+        @keyframes star-twinkle {
+          0%, 100% { opacity: 1; }
+          50% { opacity: 0.5; }
         }
       `}</style>
     </div>
