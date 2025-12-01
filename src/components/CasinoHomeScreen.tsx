@@ -384,7 +384,7 @@ export function CasinoHomeScreen({ onStartGame, onShowAuth, onShowCreateAccount,
                   >
                     <div className="flex items-center gap-3 mb-3">
                       <div className="w-12 h-12 bg-gradient-to-br from-green-400 to-emerald-600 rounded-full flex items-center justify-center shadow-lg">
-                        <Sparkles className="w-6 h-6 text-white" fill="currentColor" />
+                        <Sparkles className="w-6 h-6 text-white" />
                       </div>
                       <span className="text-green-400" style={{ fontSize: '1rem', fontWeight: 700, letterSpacing: '0.05em' }}>
                         CREATE ACCOUNT
@@ -395,7 +395,7 @@ export function CasinoHomeScreen({ onStartGame, onShowAuth, onShowCreateAccount,
                       <p className="text-transparent bg-clip-text bg-gradient-to-r from-yellow-300 via-yellow-400 to-amber-500" style={{ fontSize: '2rem', fontWeight: 900, textShadow: '0 0 20px rgba(250,204,21,0.5)' }}>
                         1,000 FREE CHIPS
                       </p>
-                      <Crown className="w-8 h-8 text-yellow-400" fill="currentColor" />
+                      <Crown className="w-8 h-8 text-yellow-400" />
                     </div>
                     <div className="mt-2 text-center text-green-300" style={{ fontSize: '0.875rem', fontWeight: 600 }}>
                       Get Started Now!
@@ -483,19 +483,19 @@ export function CasinoHomeScreen({ onStartGame, onShowAuth, onShowCreateAccount,
               </div>
 
               <div className="flex items-center justify-center gap-3">
-                <Star className="w-6 h-6 text-yellow-400" fill="currentColor" />
+                {/* Temporarily removed Star icons to fix rendering bug */}
                 <p 
                   className="text-yellow-300"
                   style={{ 
                     fontSize: '1.75rem',
                     fontWeight: 700,
-                    textShadow: '0 2px 20px rgba(0,0,0,0.8), 0 0 30px rgba(250,204,21,0.4)',
+                    textShadow: '0 0 20px rgba(250,204,21,0.8)',
                     letterSpacing: '0.1em'
                   }}
                 >
                   CRAPLESS & BUBBLE CRAPS
                 </p>
-                <Star className="w-6 h-6 text-yellow-400" fill="currentColor" />
+                {/* Temporarily removed Star icons to fix rendering bug */}
               </div>
               
               {/* Subtitle ribbon - Inside the main box */}
@@ -545,7 +545,7 @@ export function CasinoHomeScreen({ onStartGame, onShowAuth, onShowCreateAccount,
                       <p className="text-transparent bg-clip-text bg-gradient-to-r from-blue-300 via-purple-400 to-blue-500" style={{ fontSize: '2rem', fontWeight: 900, textShadow: '0 0 20px rgba(59,130,246,0.5)' }}>
                         WELCOME
                       </p>
-                      <Zap className="w-8 h-8 text-blue-400" fill="currentColor" />
+                      <Zap className="w-8 h-8 text-blue-400" />
                     </div>
                     <div className="mt-2 text-center text-purple-300" style={{ fontSize: '0.875rem', fontWeight: 600 }}>
                       Continue Playing!
@@ -637,19 +637,19 @@ export function CasinoHomeScreen({ onStartGame, onShowAuth, onShowCreateAccount,
                   </div>
 
                   <div className="flex items-center justify-center gap-3">
-                    <Star className="w-6 h-6 text-yellow-400" fill="currentColor" />
+                    {/* Temporarily removed Star icons to fix rendering bug */}
                     <p 
                       className="text-yellow-300"
                       style={{ 
                         fontSize: '1.75rem',
                         fontWeight: 700,
-                        textShadow: '0 2px 20px rgba(0,0,0,0.8), 0 0 30px rgba(250,204,21,0.4)',
+                        textShadow: '0 0 20px rgba(250,204,21,0.8)',
                         letterSpacing: '0.1em'
                       }}
                     >
                       CRAPLESS & BUBBLE CRAPS
                     </p>
-                    <Star className="w-6 h-6 text-yellow-400" fill="currentColor" />
+                    {/* Temporarily removed Star icons to fix rendering bug */}
                   </div>
                   
                   {/* Subtitle ribbon */}
@@ -681,302 +681,302 @@ export function CasinoHomeScreen({ onStartGame, onShowAuth, onShowCreateAccount,
           )}
         </div>
 
-          {/* Live Stats - Vegas Style Cards */}
-          <div className="flex justify-center items-stretch gap-8 mb-8 w-full max-w-6xl mx-auto px-8 animate-in fade-in slide-in-from-bottom-8 duration-800" style={{ animationDelay: '0.4s' }}>
-            {/* Games Played - FIRST POSITION */}
-            <div className="relative group flex-1 min-w-[280px]">
-              <div className="absolute inset-0 bg-gradient-to-br from-purple-600 to-purple-800 rounded-2xl blur-xl opacity-75 group-hover:opacity-100 transition-opacity" />
-              <div className="relative bg-gradient-to-br from-black via-purple-950 to-black border-4 border-purple-600 rounded-2xl p-8 shadow-2xl h-full flex flex-col items-center justify-center">
-                <div className="flex flex-col items-center gap-3 mb-3">
-                  <div className="w-12 h-12 bg-gradient-to-br from-purple-500 to-purple-700 rounded-full flex items-center justify-center shadow-lg">
-                    <Trophy className="w-6 h-6 text-white" />
-                  </div>
-                  <span className="text-purple-400 text-center" style={{ fontSize: '1rem', fontWeight: 700, letterSpacing: '0.05em' }}>
-                    GAMES PLAYED
-                  </span>
+        {/* Live Stats - Vegas Style Cards */}
+        <div className="flex justify-center items-stretch gap-8 mb-8 w-full max-w-6xl mx-auto px-8 animate-in fade-in slide-in-from-bottom-8 duration-800" style={{ animationDelay: '0.4s' }}>
+          {/* Games Played - FIRST POSITION */}
+          <div className="relative group flex-1 min-w-[280px]">
+            <div className="absolute inset-0 bg-gradient-to-br from-purple-600 to-purple-800 rounded-2xl blur-xl opacity-75 group-hover:opacity-100 transition-opacity" />
+            <div className="relative bg-gradient-to-br from-black via-purple-950 to-black border-4 border-purple-600 rounded-2xl p-8 shadow-2xl h-full flex flex-col items-center justify-center">
+              <div className="flex flex-col items-center gap-3 mb-3">
+                <div className="w-12 h-12 bg-gradient-to-br from-purple-500 to-purple-700 rounded-full flex items-center justify-center shadow-lg">
+                  <Trophy className="w-6 h-6 text-white" />
                 </div>
-                <p 
-                  className={`text-white text-center transition-all duration-300 ${statsFlash.games ? 'scale-110 text-purple-300' : ''}`} 
-                  style={{ 
-                    fontSize: stats.totalGames >= 1000000 ? '2.25rem' : stats.totalGames >= 100000 ? '2.5rem' : '3rem',
-                    fontWeight: 900, 
-                    textShadow: statsFlash.games ? '0 0 30px rgba(168,85,247,1)' : '0 0 20px rgba(168,85,247,0.5)',
-                    wordBreak: 'break-word'
-                  }}
-                >
-                  {stats.totalGames.toLocaleString()}
-                </p>
-                {/* Tooltip */}
-                <div className="absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 px-4 py-2 bg-black/95 text-white text-sm rounded-lg opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none whitespace-nowrap z-50">
-                  🎲 Total dice rolls across ALL tables
-                  <div className="absolute top-full left-1/2 transform -translate-x-1/2 border-4 border-transparent border-t-black/95" />
-                </div>
+                <span className="text-purple-400 text-center" style={{ fontSize: '1rem', fontWeight: 700, letterSpacing: '0.05em' }}>
+                  GAMES PLAYED
+                </span>
               </div>
-            </div>
-
-            {/* Total Jackpot - SWAPPED TO SECOND POSITION */}
-            <div className="relative group flex-1 min-w-[280px]">
-              <div className="absolute inset-0 bg-gradient-to-br from-yellow-400 to-amber-600 rounded-2xl blur-xl opacity-75 group-hover:opacity-100 transition-opacity" />
-              <div className="relative bg-gradient-to-br from-black via-amber-950 to-black border-4 border-yellow-500 rounded-2xl p-8 shadow-2xl h-full flex flex-col items-center justify-center">
-                <div className="flex flex-col items-center gap-3 mb-3">
-                  <div className="w-12 h-12 bg-gradient-to-br from-yellow-400 to-amber-600 rounded-full flex items-center justify-center shadow-lg">
-                    <Crown className="w-6 h-6 text-black" />
-                  </div>
-                  <span className="text-yellow-400 text-center" style={{ fontSize: '1rem', fontWeight: 700, letterSpacing: '0.05em' }}>
-                    TOTAL JACKPOT
-                  </span>
-                </div>
-                <p 
-                  className={`text-transparent bg-clip-text bg-gradient-to-r from-yellow-300 via-yellow-400 to-amber-500 text-center transition-all duration-300 ${statsFlash.jackpot ? 'scale-110' : ''}`} 
-                  style={{ 
-                    fontSize: stats.totalJackpot >= 1000000 ? '2.25rem' : stats.totalJackpot >= 100000 ? '2.5rem' : '3rem',
-                    fontWeight: 900, 
-                    textShadow: statsFlash.jackpot ? '0 0 30px rgba(250,204,21,1)' : '0 0 20px rgba(250,204,21,0.5)',
-                    wordBreak: 'break-word'
-                  }}
-                >
-                  {formatJackpot(stats.totalJackpot)}
-                </p>
-                <div className="absolute bottom-3 right-3">
-                  <Sparkles className="w-5 h-5 text-yellow-400 animate-pulse" />
-                </div>
-                {/* Tooltip */}
-                <div className="absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 px-4 py-2 bg-black/95 text-white text-sm rounded-lg opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none whitespace-nowrap z-50">
-                  💰 Total winnings paid to ALL players
-                  <div className="absolute top-full left-1/2 transform -translate-x-1/2 border-4 border-transparent border-t-black/95" />
-                </div>
-              </div>
-            </div>
-
-            {/* Players Online - SWAPPED TO THIRD POSITION */}
-            <div className="relative group flex-1 min-w-[280px]">
-              <div className="absolute inset-0 bg-gradient-to-br from-red-600 to-red-800 rounded-2xl blur-xl opacity-75 group-hover:opacity-100 transition-opacity" />
-              <div className="relative bg-gradient-to-br from-black via-red-950 to-black border-4 border-red-600 rounded-2xl p-8 shadow-2xl h-full flex flex-col items-center justify-center">
-                <div className="flex flex-col items-center gap-3 mb-3">
-                  <div className="w-12 h-12 bg-gradient-to-br from-red-500 to-red-700 rounded-full flex items-center justify-center shadow-lg">
-                    <Users className="w-6 h-6 text-white" />
-                  </div>
-                  <span className="text-red-400 text-center" style={{ fontSize: '1rem', fontWeight: 700, letterSpacing: '0.05em' }}>
-                    PLAYERS ONLINE
-                  </span>
-                </div>
-                <p 
-                  className={`text-white text-center transition-all duration-300 ${statsFlash.players ? 'scale-110 text-red-300' : ''}`} 
-                  style={{ 
-                    fontSize: stats.playersOnline >= 10000 ? '2.25rem' : stats.playersOnline >= 1000 ? '2.5rem' : '3rem',
-                    fontWeight: 900, 
-                    textShadow: statsFlash.players ? '0 0 30px rgba(239,68,68,1)' : '0 0 20px rgba(239,68,68,0.5)',
-                    wordBreak: 'break-word'
-                  }}
-                >
-                  {stats.playersOnline}
-                </p>
-                {/* Tooltip */}
-                <div className="absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 px-4 py-2 bg-black/95 text-white text-sm rounded-lg opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none whitespace-nowrap z-50">
-                  👥 Active players RIGHT NOW
-                  <div className="absolute top-full left-1/2 transform -translate-x-1/2 border-4 border-transparent border-t-black/95" />
-                </div>
+              <p 
+                className={`text-white text-center transition-all duration-300 ${statsFlash.games ? 'scale-110 text-purple-300' : ''}`} 
+                style={{ 
+                  fontSize: stats.totalGames >= 1000000 ? '2.25rem' : stats.totalGames >= 100000 ? '2.5rem' : '3rem',
+                  fontWeight: 900, 
+                  textShadow: statsFlash.games ? '0 0 30px rgba(168,85,247,1)' : '0 0 20px rgba(168,85,247,0.5)',
+                  wordBreak: 'break-word'
+                }}
+              >
+                {stats.totalGames.toLocaleString()}
+              </p>
+              {/* Tooltip */}
+              <div className="absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 px-4 py-2 bg-black/95 text-white text-sm rounded-lg opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none whitespace-nowrap z-50">
+                🎲 Total dice rolls across ALL tables
+                <div className="absolute top-full left-1/2 transform -translate-x-1/2 border-4 border-transparent border-t-black/95" />
               </div>
             </div>
           </div>
 
-          {/* Leaderboard Button */}
-          {onShowLeaderboard && (
-            <div className="relative max-w-md w-full mb-6 animate-in fade-in slide-in-from-bottom-4 duration-500" style={{ animationDelay: '0.4s' }}>
-              <button
-                onClick={onShowLeaderboard}
-                className="relative w-full group"
+          {/* Total Jackpot - SWAPPED TO SECOND POSITION */}
+          <div className="relative group flex-1 min-w-[280px]">
+            <div className="absolute inset-0 bg-gradient-to-br from-yellow-400 to-amber-600 rounded-2xl blur-xl opacity-75 group-hover:opacity-100 transition-opacity" />
+            <div className="relative bg-gradient-to-br from-black via-amber-950 to-black border-4 border-yellow-500 rounded-2xl p-8 shadow-2xl h-full flex flex-col items-center justify-center">
+              <div className="flex flex-col items-center gap-3 mb-3">
+                <div className="w-12 h-12 bg-gradient-to-br from-yellow-400 to-amber-600 rounded-full flex items-center justify-center shadow-lg">
+                  <Crown className="w-6 h-6 text-black" />
+                </div>
+                <span className="text-yellow-400 text-center" style={{ fontSize: '1rem', fontWeight: 700, letterSpacing: '0.05em' }}>
+                  TOTAL JACKPOT
+                </span>
+              </div>
+              <p 
+                className={`text-transparent bg-clip-text bg-gradient-to-r from-yellow-300 via-yellow-400 to-amber-500 text-center transition-all duration-300 ${statsFlash.jackpot ? 'scale-110' : ''}`} 
+                style={{ 
+                  fontSize: stats.totalJackpot >= 1000000 ? '2.25rem' : stats.totalJackpot >= 100000 ? '2.5rem' : '3rem',
+                  fontWeight: 900, 
+                  textShadow: statsFlash.jackpot ? '0 0 30px rgba(250,204,21,1)' : '0 0 20px rgba(250,204,21,0.5)',
+                  wordBreak: 'break-word'
+                }}
               >
-                {/* Glow effects */}
-                <div className="absolute inset-0 bg-gradient-to-r from-yellow-500 via-orange-500 to-yellow-500 rounded-2xl blur-xl animate-pulse" />
-                
-                <div className="relative bg-gradient-to-r from-yellow-600 via-orange-600 to-yellow-600 px-8 py-4 rounded-2xl shadow-2xl border-4 overflow-hidden hover:scale-105 active:scale-98 transition-transform" style={{ borderColor: '#FFD700', boxShadow: '0 0 30px rgba(255, 215, 0, 0.6)' }}>
-                  {/* Shine effect */}
-                  <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white to-transparent opacity-20 animate-pulse" />
+                {formatJackpot(stats.totalJackpot)}
+              </p>
+              <div className="absolute bottom-3 right-3">
+                <Sparkles className="w-5 h-5 text-yellow-400 animate-pulse" />
+              </div>
+              {/* Tooltip */}
+              <div className="absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 px-4 py-2 bg-black/95 text-white text-sm rounded-lg opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none whitespace-nowrap z-50">
+                💰 Total winnings paid to ALL players
+                <div className="absolute top-full left-1/2 transform -translate-x-1/2 border-4 border-transparent border-t-black/95" />
+              </div>
+            </div>
+          </div>
 
-                  {/* Content */}
-                  <div className="relative flex items-center justify-center gap-4">
-                    <Trophy className="w-8 h-8 text-white" />
-                    <span 
-                      className="text-white"
-                      style={{ 
-                        fontSize: '1.5rem', 
-                        fontWeight: 900, 
-                        letterSpacing: '0.1em',
-                        textShadow: '0 0 20px rgba(255,215,0,0.8), 0 2px 10px rgba(0,0,0,1)'
-                      }}
-                    >
-                      VIEW LEADERBOARD
-                    </span>
-                    <Crown className="w-8 h-8 text-white" fill="currentColor" />
+          {/* Players Online - SWAPPED TO THIRD POSITION */}
+          <div className="relative group flex-1 min-w-[280px]">
+            <div className="absolute inset-0 bg-gradient-to-br from-red-600 to-red-800 rounded-2xl blur-xl opacity-75 group-hover:opacity-100 transition-opacity" />
+            <div className="relative bg-gradient-to-br from-black via-red-950 to-black border-4 border-red-600 rounded-2xl p-8 shadow-2xl h-full flex flex-col items-center justify-center">
+              <div className="flex flex-col items-center gap-3 mb-3">
+                <div className="w-12 h-12 bg-gradient-to-br from-red-500 to-red-700 rounded-full flex items-center justify-center shadow-lg">
+                  <Users className="w-6 h-6 text-white" />
+                </div>
+                <span className="text-red-400 text-center" style={{ fontSize: '1rem', fontWeight: 700, letterSpacing: '0.05em' }}>
+                  PLAYERS ONLINE
+                </span>
+              </div>
+              <p 
+                className={`text-white text-center transition-all duration-300 ${statsFlash.players ? 'scale-110 text-red-300' : ''}`} 
+                style={{ 
+                  fontSize: stats.playersOnline >= 10000 ? '2.25rem' : stats.playersOnline >= 1000 ? '2.5rem' : '3rem',
+                  fontWeight: 900, 
+                  textShadow: statsFlash.players ? '0 0 30px rgba(239,68,68,1)' : '0 0 20px rgba(239,68,68,0.5)',
+                  wordBreak: 'break-word'
+                }}
+              >
+                {stats.playersOnline}
+              </p>
+              {/* Tooltip */}
+              <div className="absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 px-4 py-2 bg-black/95 text-white text-sm rounded-lg opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none whitespace-nowrap z-50">
+                👥 Active players RIGHT NOW
+                <div className="absolute top-full left-1/2 transform -translate-x-1/2 border-4 border-transparent border-t-black/95" />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Leaderboard Button */}
+        {onShowLeaderboard && (
+          <div className="relative max-w-md w-full mb-6 animate-in fade-in slide-in-from-bottom-4 duration-500" style={{ animationDelay: '0.4s' }}>
+            <button
+              onClick={onShowLeaderboard}
+              className="relative w-full group"
+            >
+              {/* Glow effects */}
+              <div className="absolute inset-0 bg-gradient-to-r from-yellow-500 via-orange-500 to-yellow-500 rounded-2xl blur-xl animate-pulse" />
+              
+              <div className="relative bg-gradient-to-r from-yellow-600 via-orange-600 to-yellow-600 px-8 py-4 rounded-2xl shadow-2xl border-4 overflow-hidden hover:scale-105 active:scale-98 transition-transform" style={{ borderColor: '#FFD700', boxShadow: '0 0 30px rgba(255, 215, 0, 0.6)' }}>
+                {/* Shine effect */}
+                <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white to-transparent opacity-20 animate-pulse" />
+
+                {/* Content */}
+                <div className="relative flex items-center justify-center gap-4">
+                  <Trophy className="w-8 h-8 text-white" />
+                  <span 
+                    className="text-white"
+                    style={{ 
+                      fontSize: '1.5rem', 
+                      fontWeight: 900, 
+                      letterSpacing: '0.1em',
+                      textShadow: '0 0 20px rgba(255,215,0,0.8), 0 2px 10px rgba(0,0,0,1)'
+                    }}
+                  >
+                    VIEW LEADERBOARD
+                  </span>
+                  <Crown className="w-8 h-8 text-white" />
+                </div>
+                
+                {/* Sub text */}
+                <div className="relative text-center mt-2">
+                  <span className="text-yellow-200" style={{ fontSize: '0.875rem', fontWeight: 700 }}>
+                    🏆 Compete with the best players! 🏆
+                  </span>
+                </div>
+              </div>
+            </button>
+          </div>
+        )}
+
+        {/* User Info for logged-in users */}
+        {isLoggedIn && playerName && (
+          <div className="relative max-w-2xl w-full mb-6 animate-in fade-in zoom-in-95 duration-800" style={{ animationDelay: '0.2s' }}>
+            <div className="absolute inset-0 bg-gradient-to-r from-green-500 to-emerald-600 rounded-3xl blur-2xl opacity-60" />
+            <div className="relative bg-gradient-to-br from-green-900 via-emerald-950 to-green-900 border-4 border-green-500 rounded-3xl p-8 shadow-2xl">
+              <div className="flex items-center justify-between">
+                <div className="flex items-center gap-6">
+                  <div className="relative">
+                    <div className="w-24 h-24 bg-gradient-to-br from-green-400 to-emerald-600 rounded-full flex items-center justify-center border-4 border-green-300 shadow-xl shadow-green-500/50">
+                      <span className="text-white" style={{ fontSize: '2.5rem', fontWeight: 900 }}>
+                        {playerName.charAt(0).toUpperCase()}
+                      </span>
+                    </div>
+                    <div className="absolute -bottom-1 -right-1 w-6 h-6 bg-green-400 rounded-full border-4 border-green-900 shadow-lg" />
                   </div>
                   
-                  {/* Sub text */}
-                  <div className="relative text-center mt-2">
-                    <span className="text-yellow-200" style={{ fontSize: '0.875rem', fontWeight: 700 }}>
-                      🏆 Compete with the best players! 🏆
-                    </span>
+                  <div className="text-center">
+                    <p className="text-green-300 mb-1" style={{ fontSize: '1rem', fontWeight: 600, letterSpacing: '0.05em' }}>
+                      WELCOME BACK
+                    </p>
+                    <p className="text-white mb-3" style={{ fontSize: '2rem', fontWeight: 900, textShadow: '0 0 20px rgba(34,197,94,0.5)' }}>
+                      {playerName}
+                    </p>
+                    <div className="flex items-center gap-2 bg-black/40 rounded-full px-4 py-2 border border-green-500/30">
+                      <DollarSign className="w-6 h-6 text-green-400" />
+                      <span className="text-green-400" style={{ fontSize: '1.5rem', fontWeight: 800 }}>
+                        {balance?.toLocaleString() || 0}
+                      </span>
+                      <span className="text-green-300" style={{ fontSize: '1rem', fontWeight: 600 }}>
+                        CHIPS
+                      </span>
+                    </div>
                   </div>
                 </div>
-              </button>
-            </div>
-          )}
 
-          {/* User Info for logged-in users */}
-          {isLoggedIn && playerName && (
-            <div className="relative max-w-2xl w-full mb-6 animate-in fade-in zoom-in-95 duration-800" style={{ animationDelay: '0.2s' }}>
-              <div className="absolute inset-0 bg-gradient-to-r from-green-500 to-emerald-600 rounded-3xl blur-2xl opacity-60" />
-              <div className="relative bg-gradient-to-br from-green-900 via-emerald-950 to-green-900 border-4 border-green-500 rounded-3xl p-8 shadow-2xl">
-                <div className="flex items-center justify-between">
-                  <div className="flex items-center gap-6">
-                    <div className="relative">
-                      <div className="w-24 h-24 bg-gradient-to-br from-green-400 to-emerald-600 rounded-full flex items-center justify-center border-4 border-green-300 shadow-xl shadow-green-500/50">
-                        <span className="text-white" style={{ fontSize: '2.5rem', fontWeight: 900 }}>
-                          {playerName.charAt(0).toUpperCase()}
-                        </span>
-                      </div>
-                      <div className="absolute -bottom-1 -right-1 w-6 h-6 bg-green-400 rounded-full border-4 border-green-900 shadow-lg" />
-                    </div>
-                    
-                    <div className="text-center">
-                      <p className="text-green-300 mb-1" style={{ fontSize: '1rem', fontWeight: 600, letterSpacing: '0.05em' }}>
-                        WELCOME BACK
-                      </p>
-                      <p className="text-white mb-3" style={{ fontSize: '2rem', fontWeight: 900, textShadow: '0 0 20px rgba(34,197,94,0.5)' }}>
-                        {playerName}
-                      </p>
-                      <div className="flex items-center gap-2 bg-black/40 rounded-full px-4 py-2 border border-green-500/30">
-                        <DollarSign className="w-6 h-6 text-green-400" />
-                        <span className="text-green-400" style={{ fontSize: '1.5rem', fontWeight: 800 }}>
-                          {balance?.toLocaleString() || 0}
-                        </span>
-                        <span className="text-green-300" style={{ fontSize: '1rem', fontWeight: 600 }}>
-                          CHIPS
+                <div className="flex gap-4">
+                  {/* Play Now Button */}
+                  <button
+                    onClick={onStartGame}
+                    className="relative group"
+                  >
+                    <div className="absolute inset-0 bg-gradient-to-r from-red-500 to-orange-600 rounded-2xl blur-lg group-hover:blur-xl transition-all opacity-75 group-hover:opacity-100" />
+                    <div className="relative bg-gradient-to-r from-red-600 via-orange-500 to-red-600 hover:from-red-500 hover:via-orange-400 hover:to-red-500 px-8 py-5 rounded-2xl transition-all transform group-hover:scale-105 shadow-2xl border-4 border-yellow-400">
+                      <div className="flex flex-col items-center gap-2">
+                        <Zap className="w-8 h-8 text-yellow-300" />
+                        <span className="text-white" style={{ fontSize: '1.25rem', fontWeight: 900, letterSpacing: '0.05em', textShadow: '0 2px 10px rgba(0,0,0,0.5)' }}>
+                          PLAY NOW
                         </span>
                       </div>
                     </div>
-                  </div>
+                  </button>
 
-                  <div className="flex gap-4">
-                    {/* Play Now Button */}
+                  {/* Back Button */}
+                  {onSwitchUser && (
                     <button
-                      onClick={onStartGame}
+                      onClick={() => window.history.back()}
                       className="relative group"
                     >
-                      <div className="absolute inset-0 bg-gradient-to-r from-red-500 to-orange-600 rounded-2xl blur-lg group-hover:blur-xl transition-all opacity-75 group-hover:opacity-100" />
-                      <div className="relative bg-gradient-to-r from-red-600 via-orange-500 to-red-600 hover:from-red-500 hover:via-orange-400 hover:to-red-500 px-8 py-5 rounded-2xl transition-all transform group-hover:scale-105 shadow-2xl border-4 border-yellow-400">
+                      <div className="absolute inset-0 bg-gradient-to-r from-blue-600 to-blue-800 rounded-2xl blur-lg group-hover:blur-xl transition-all opacity-75 group-hover:opacity-100" />
+                      <div className="relative bg-gradient-to-r from-blue-700 via-blue-800 to-blue-700 hover:from-blue-600 hover:via-blue-700 hover:to-blue-600 px-8 py-5 rounded-2xl transition-all transform group-hover:scale-105 shadow-2xl border-4 border-amber-500">
                         <div className="flex flex-col items-center gap-2">
-                          <Zap className="w-8 h-8 text-yellow-300" fill="currentColor" />
+                          <ChevronLeft className="w-8 h-8 text-amber-400" />
                           <span className="text-white" style={{ fontSize: '1.25rem', fontWeight: 900, letterSpacing: '0.05em', textShadow: '0 2px 10px rgba(0,0,0,0.5)' }}>
-                            PLAY NOW
+                            BACK
                           </span>
                         </div>
                       </div>
                     </button>
-
-                    {/* Back Button */}
-                    {onSwitchUser && (
-                      <button
-                        onClick={() => window.history.back()}
-                        className="relative group"
-                      >
-                        <div className="absolute inset-0 bg-gradient-to-r from-blue-600 to-blue-800 rounded-2xl blur-lg group-hover:blur-xl transition-all opacity-75 group-hover:opacity-100" />
-                        <div className="relative bg-gradient-to-r from-blue-700 via-blue-800 to-blue-700 hover:from-blue-600 hover:via-blue-700 hover:to-blue-600 px-8 py-5 rounded-2xl transition-all transform group-hover:scale-105 shadow-2xl border-4 border-amber-500">
-                          <div className="flex flex-col items-center gap-2">
-                            <ChevronLeft className="w-8 h-8 text-amber-400" />
-                            <span className="text-white" style={{ fontSize: '1.25rem', fontWeight: 900, letterSpacing: '0.05em', textShadow: '0 2px 10px rgba(0,0,0,0.5)' }}>
-                              BACK
-                            </span>
-                          </div>
-                        </div>
-                      </button>
-                    )}
-                  </div>
+                  )}
                 </div>
-              </div>
-            </div>
-          )}
-
-          {/* Hot Streak Ticker - Vegas Style */}
-          <div className="mt-6 max-w-5xl mx-auto px-4 w-full animate-in fade-in slide-in-from-bottom-4 duration-800" style={{ animationDelay: '0.6s' }}>
-            <div className="bg-gradient-to-r from-red-900 via-orange-900 to-red-900 border-4 border-orange-500 rounded-2xl p-3 shadow-2xl overflow-hidden">
-              <div className="flex items-center gap-3 mb-2">
-                <div className="flex items-center gap-2 bg-orange-600 px-3 py-1.5 rounded-full shadow-lg">
-                  <Flame className="w-4 h-4 text-white" fill="currentColor" />
-                  <span className="text-white" style={{ fontSize: '0.75rem', fontWeight: 800, letterSpacing: '0.05em' }}>LIVE HOT STREAKS</span>
-                  <Flame className="w-4 h-4 text-white" fill="currentColor" />
-                </div>
-                <div className="flex-1 h-1 bg-gradient-to-r from-orange-500 via-yellow-400 to-orange-500 rounded-full" />
-                <div className="bg-yellow-400 text-black px-2 py-0.5 rounded-full" style={{ fontSize: '0.625rem', fontWeight: 800 }}>
-                  REAL-TIME
-                </div>
-              </div>
-              <div className="relative h-16 overflow-hidden">
-                <div className="absolute inset-0 flex items-center animate-in fade-in slide-in-from-top-12 duration-600">
-                  <div className="flex items-center gap-3 w-full">
-                    <div className="text-3xl">{hotStreaks[tickerPosition]?.icon}</div>
-                    <p className="text-yellow-300 flex-1" style={{ fontSize: '1rem', fontWeight: 700 }}>
-                      {hotStreaks[tickerPosition]?.message}
-                    </p>
-                    <Sparkles className="w-5 h-5 text-yellow-400" fill="currentColor" />
-                  </div>
-                </div>
-              </div>
-              
-              {/* Pulsing dots indicator */}
-              <div className="flex justify-center gap-2 mt-2">
-                {hotStreaks.slice(0, 4).map((_, idx) => (
-                  <div
-                    key={idx}
-                    className={`w-1.5 h-1.5 rounded-full ${idx === tickerPosition % 4 ? 'bg-yellow-400 animate-pulse' : 'bg-gray-600'}`}
-                  />
-                ))}
               </div>
             </div>
           </div>
+        )}
 
-          {/* Daily Bonus Callout - Only for logged-in users */}
-          {isLoggedIn && (
-            <div className="mt-4 flex justify-center animate-in fade-in zoom-in-95 duration-800" style={{ animationDelay: '0.7s' }}>
-              <button
-                onClick={() => bonusStatus.canClaim && setShowDailyBonus(true)}
-                className={`relative group ${!bonusStatus.canClaim ? 'cursor-not-allowed opacity-60' : ''} ${bonusStatus.canClaim ? 'hover:scale-105 active:scale-95' : ''} transition-transform`}
-              >
-                {bonusStatus.canClaim && (
-                  <div className="absolute inset-0 bg-gradient-to-r from-pink-500 to-rose-600 rounded-2xl blur-xl opacity-75 group-hover:opacity-100 transition-opacity animate-pulse" />
-                )}
-                <div className={`relative px-8 py-4 rounded-2xl border-4 shadow-2xl ${
-                  bonusStatus.canClaim 
-                    ? 'bg-gradient-to-r from-pink-600 via-rose-600 to-pink-600 border-pink-300' 
-                    : 'bg-gradient-to-r from-gray-700 via-gray-600 to-gray-700 border-gray-500'
-                }`}>
-                  <div className="flex items-center gap-4">
-                    <div className={`text-4xl ${bonusStatus.canClaim ? 'animate-bounce' : ''}`}>
-                      🎁
-                    </div>
-                    <div className="text-left">
-                      <div className={`${bonusStatus.canClaim ? 'text-white' : 'text-gray-400'}`} style={{ fontSize: '1.5rem', fontWeight: 900, textShadow: '0 2px 10px rgba(0,0,0,0.5)' }}>
-                        {bonusStatus.canClaim ? 'CLAIM YOUR DAILY BONUS!' : 'DAILY BONUS CLAIMED'}
-                      </div>
-                      <div className={`${bonusStatus.canClaim ? 'text-pink-200' : 'text-gray-500'}`} style={{ fontSize: '0.875rem', fontWeight: 600 }}>
-                        {bonusStatus.canClaim ? 'Free chips waiting for you' : `Next bonus in: ${formatCountdown()}`}
-                      </div>
-                    </div>
-                    <Sparkles className="w-8 h-8 text-yellow-300" fill="currentColor" />
-                  </div>
-                </div>
-              </button>
+        {/* Hot Streak Ticker - Vegas Style */}
+        <div className="mt-6 max-w-5xl mx-auto px-4 w-full animate-in fade-in slide-in-from-bottom-4 duration-800" style={{ animationDelay: '0.6s' }}>
+          <div className="bg-gradient-to-r from-red-900 via-orange-900 to-red-900 border-4 border-orange-500 rounded-2xl p-3 shadow-2xl overflow-hidden">
+            <div className="flex items-center gap-3 mb-2">
+              <div className="flex items-center gap-2 bg-orange-600 px-3 py-1.5 rounded-full shadow-lg">
+                <Flame className="w-4 h-4 text-white" />
+                <span className="text-white" style={{ fontSize: '0.75rem', fontWeight: 800, letterSpacing: '0.05em' }}>LIVE HOT STREAKS</span>
+                <Flame className="w-4 h-4 text-white" />
+              </div>
+              <div className="flex-1 h-1 bg-gradient-to-r from-orange-500 via-yellow-400 to-orange-500 rounded-full" />
+              <div className="bg-yellow-400 text-black px-2 py-0.5 rounded-full" style={{ fontSize: '0.625rem', fontWeight: 800 }}>
+                REAL-TIME
+              </div>
             </div>
-          )}
-
-          {/* Footer Info */}
-          <div className="mt-6 mb-4 text-center animate-in fade-in duration-800" style={{ animationDelay: '0.9s' }}>
-            <div className="inline-block bg-black/60 border border-amber-600/30 rounded-full px-8 py-3 backdrop-blur-sm">
-              <p className="text-amber-400" style={{ fontSize: '1rem', fontWeight: 600, letterSpacing: '0.05em' }}>
-                ★ No Real Money • $3 Minimum Bet • 100% Fair Play ★
-              </p>
+            <div className="relative h-16 overflow-hidden">
+              <div className="absolute inset-0 flex items-center animate-in fade-in slide-in-from-top-12 duration-600">
+                <div className="flex items-center gap-3 w-full">
+                  <div className="text-3xl">{hotStreaks[tickerPosition]?.icon}</div>
+                  <p className="text-yellow-300 flex-1" style={{ fontSize: '1rem', fontWeight: 700 }}>
+                    {hotStreaks[tickerPosition]?.message}
+                  </p>
+                  <Sparkles className="w-5 h-5 text-yellow-400" />
+                </div>
+              </div>
+            </div>
+            
+            {/* Pulsing dots indicator */}
+            <div className="flex justify-center gap-2 mt-2">
+              {hotStreaks.slice(0, 4).map((_, idx) => (
+                <div
+                  key={idx}
+                  className={`w-1.5 h-1.5 rounded-full ${idx === tickerPosition % 4 ? 'bg-yellow-400 animate-pulse' : 'bg-gray-600'}`}
+                />
+              ))}
             </div>
           </div>
+        </div>
+
+        {/* Daily Bonus Callout - Only for logged-in users */}
+        {isLoggedIn && (
+          <div className="mt-4 flex justify-center animate-in fade-in zoom-in-95 duration-800" style={{ animationDelay: '0.7s' }}>
+            <button
+              onClick={() => bonusStatus.canClaim && setShowDailyBonus(true)}
+              className={`relative group ${!bonusStatus.canClaim ? 'cursor-not-allowed opacity-60' : ''} ${bonusStatus.canClaim ? 'hover:scale-105 active:scale-95' : ''} transition-transform`}
+            >
+              {bonusStatus.canClaim && (
+                <div className="absolute inset-0 bg-gradient-to-r from-pink-500 to-rose-600 rounded-2xl blur-xl opacity-75 group-hover:opacity-100 transition-opacity animate-pulse" />
+              )}
+              <div className={`relative px-8 py-4 rounded-2xl border-4 shadow-2xl ${
+                bonusStatus.canClaim 
+                  ? 'bg-gradient-to-r from-pink-600 via-rose-600 to-pink-600 border-pink-300' 
+                  : 'bg-gradient-to-r from-gray-700 via-gray-600 to-gray-700 border-gray-500'
+              }`}>
+                <div className="flex items-center gap-4">
+                  <div className={`text-4xl ${bonusStatus.canClaim ? 'animate-bounce' : ''}`}>
+                    🎁
+                  </div>
+                  <div className="text-left">
+                    <div className={`${bonusStatus.canClaim ? 'text-white' : 'text-gray-400'}`} style={{ fontSize: '1.5rem', fontWeight: 900, textShadow: '0 2px 10px rgba(0,0,0,0.5)' }}>
+                      {bonusStatus.canClaim ? 'CLAIM YOUR DAILY BONUS!' : 'DAILY BONUS CLAIMED'}
+                    </div>
+                    <div className={`${bonusStatus.canClaim ? 'text-pink-200' : 'text-gray-500'}`} style={{ fontSize: '0.875rem', fontWeight: 600 }}>
+                      {bonusStatus.canClaim ? 'Free chips waiting for you' : `Next bonus in: ${formatCountdown()}`}
+                    </div>
+                  </div>
+                  <Sparkles className="w-8 h-8 text-yellow-300" />
+                </div>
+              </div>
+            </button>
+          </div>
+        )}
+
+        {/* Footer Info */}
+        <div className="mt-6 mb-4 text-center animate-in fade-in duration-800" style={{ animationDelay: '0.9s' }}>
+          <div className="inline-block bg-black/60 border border-amber-600/30 rounded-full px-8 py-3 backdrop-blur-sm">
+            <p className="text-amber-400" style={{ fontSize: '1rem', fontWeight: 600, letterSpacing: '0.05em' }}>
+              ★ No Real Money • $3 Minimum Bet • 100% Fair Play ★
+            </p>
+          </div>
+        </div>
       </div>
 
       {/* Daily Bonus Modal */}
@@ -1009,7 +1009,7 @@ export function CasinoHomeScreen({ onStartGame, onShowAuth, onShowCreateAccount,
                     <div className="flex items-center justify-center gap-3 mb-3">
                       <DollarSign className={`w-8 h-8 ${bonusStatus.canClaim ? 'text-yellow-400' : 'text-gray-500'}`} />
                       <span className={`${bonusStatus.canClaim ? 'text-yellow-300' : 'text-gray-500'}`} style={{ fontSize: '3rem', fontWeight: 900 }}>500</span>
-                      <Sparkles className={`w-8 h-8 ${bonusStatus.canClaim ? 'text-yellow-400' : 'text-gray-500'}`} fill="currentColor" />
+                      <Sparkles className={`w-8 h-8 ${bonusStatus.canClaim ? 'text-yellow-400' : 'text-gray-500'}`} />
                     </div>
                     <p className={`${bonusStatus.canClaim ? 'text-yellow-200' : 'text-gray-500'}`} style={{ fontSize: '1rem', fontWeight: 700 }}>
                       FREE CHIPS
