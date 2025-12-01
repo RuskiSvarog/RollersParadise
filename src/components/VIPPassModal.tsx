@@ -102,9 +102,9 @@ export function VIPPassModal({ onClose, onPurchase, isVIP }: VIPPassModalProps) 
           {/* Current Status (if VIP) */}
           {isVIP && (
             <div
-              className="animate-in fade-in slide-in-from-top-2 duration-300"
-              className="mx-6 mt-6 p-4 bg-gradient-to-r from-green-600/20 to-emerald-600/20 border-2 border-green-500 rounded-xl"
+              className="animate-in fade-in slide-in-from-top-2 duration-300 mx-6 mt-6 p-4 bg-gradient-to-r from-green-600/20 to-emerald-600/20 border-2 border-green-500 rounded-xl"
             >
+
               <div className="flex items-center gap-3">
                 <CheckCircle className="w-6 h-6 text-green-400" />
                 <div>
