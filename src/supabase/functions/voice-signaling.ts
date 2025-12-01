@@ -2,7 +2,7 @@
 // Handles WebRTC signaling for peer-to-peer voice connections
 // Supports global servers with proper security and privacy
 
-import { serve } from 'https://deno.land/std@0.168.0/http/server.ts';
+import { serve } from 'https://deno.land/std/http/server.ts';
 import { createClient } from 'https://esm.sh/@supabase/supabase-js@2';
 
 const corsHeaders = {
